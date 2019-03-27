@@ -9,4 +9,5 @@ mailList，邮箱列表云端保存
 
 ##使用方法：
 在本地项目目录执行：mvn package
-打成jar包上传到云函数
+然后在target中可以找到jar包
+将jar包上传到云函数
