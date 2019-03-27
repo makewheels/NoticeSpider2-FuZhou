@@ -29,6 +29,7 @@ public class HttpUtil {
 		CloseableHttpClient client = HttpClients.createDefault();
 		HttpGet httpGet = new HttpGet(url);
 		httpGet.addHeader("User-Agent", userAgent);
+		httpGet.addHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 		CloseableHttpResponse response = null;
 		try {
 			response = client.execute(httpGet);
